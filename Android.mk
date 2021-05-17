@@ -25,7 +25,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),ginna)
+ifeq ($(TARGET_DEVICE),astro)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

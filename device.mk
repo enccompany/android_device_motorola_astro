@@ -1,8 +1,8 @@
 
-LOCAL_PATH := device/motorola/ginna
+LOCAL_PATH := device/motorola/astro
 
 # define hardware platform
-PRODUCT_PLATFORM := msm8953
+PRODUCT_PLATFORM := sdm710
 
 #TEST
 # A/B support
@@ -26,8 +26,8 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl-wrapper.recovery \
     android.hardware.boot@1.0-impl-wrapper \
     android.hardware.boot@1.0-impl-recovery \
-    bootctrl.msm8953 \
-    bootctrl.msm8953.recovery \
+    bootctrl.sdm710 \
+    bootctrl.sdm710.recovery \
 
 PRODUCT_HOST_PACKAGES += \
     libandroidicu
