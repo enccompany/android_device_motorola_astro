@@ -25,7 +25,7 @@ before_script:
   - TWRP_SOURCE4="https://github.com/PhantomZone54/twrp_sources_norepo/releases/download/v3.5.0_9-20210130/MinimalOmniRecovery-twrp-9.0-norepo-20210130.tzst.ad"
   # Then uncomment below lines to download & extract the multi-part files
   - wget -q --show-progress --progress=bar:force "${TWRP_SOURCE1}" "${TWRP_SOURCE2}" "${TWRP_SOURCE3}" "${TWRP_SOURCE4}"
-  - tar -axvf MinimalOmniRecovery-twrp-9.0-norepo-20210130.tzst.aa $HOME/twrp/
+  - tar --zstd -xf MinimalOmniRecovery-twrp-9.0-norepo-20210130.tzst.aa $HOME/twrp/
 script:
   # Replace your ${_USERNAME_}, ${_REPO_SLUG_}, ${_VENDORNAME_}, ${_CODENAME_}
   - cd $HOME/twrp/ && git clone https://github.com/enccompany/android_device_motorola_astro.git device/motorola/astro
